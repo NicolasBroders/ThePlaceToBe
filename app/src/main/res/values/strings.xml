@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ThePlaceToBe</string>
+    <string name="the_place_to_be">The Place To Be</string>
+    <string name="i_have_already_an_account">I have already an account</string>
+    <string name="sign_in_with_facebook">Sign in with Facebook</string>
+    <string name="d_couvrez_comment_passer_votre_soir_e_en_quelques_minutes_et_gratuitement">Découvrez comment passer votre soirée en quelques minutes, et gratuitement.</string>
+    <string name="sign_in_with_email">Sign In with Email</string>
+    <string name="sign_in_with_twitter">Sign In with Twitter</string>
+</resources>
