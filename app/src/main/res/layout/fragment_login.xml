@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.papailleenqueue.">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".MainActivity" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="310dp"
+            android:layout_height="624dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/signInFacebookButton"
+                style="@style/ButtonStyle1"
+                android:layout_width="@dimen/layout_width_button"
+                android:layout_height="@dimen/layout_heigh_button"
+                android:background="#3B5998"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/sign_in_with_facebook"
+                app:layout_constraintBottom_toTopOf="@+id/signInEmailButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/signInTwitterButton" />
+
+            <Button
+                android:id="@+id/signInEmailButton"
+                style="@style/ButtonStyle1"
+                android:layout_width="@dimen/layout_width_button"
+                android:layout_height="@dimen/layout_heigh_button"
+                android:background="#FCE2A9"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/sign_in_with_email"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toTopOf="@+id/alreadyAnAccountText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/signInFacebookButton" />
+
+            <Button
+                android:id="@+id/signInTwitterButton"
+                style="@style/ButtonStyle1"
+                android:layout_width="@dimen/layout_width_button"
+                android:layout_height="@dimen/layout_heigh_button"
+                android:background="#1DA1F2"
+                android:text="@string/sign_in_with_twitter"
+                app:layout_constraintBottom_toTopOf="@+id/signInFacebookButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionAppText" />
+
+            <TextView
+                android:id="@+id/alreadyAnAccountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/i_have_already_an_account"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/signInEmailButton"
+                app:layout_constraintVertical_bias="0.273" />
+
+            <TextView
+                android:id="@+id/appTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:fontFamily="@font/beauty_and_the_beast"
+                android:text="@string/the_place_to_be"
+                android:textSize="35sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/descriptionAppText"
+                android:layout_width="262dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_horizontal"
+                android:lineSpacingMultiplier="1.2"
+                android:text="@string/d_couvrez_comment_passer_votre_soir_e_en_quelques_minutes_et_gratuitement"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appTitleText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

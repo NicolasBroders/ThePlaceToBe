@@ -6,4 +6,6 @@
     <string name="d_couvrez_comment_passer_votre_soir_e_en_quelques_minutes_et_gratuitement">Découvrez comment passer votre soirée en quelques minutes, et gratuitement.</string>
     <string name="sign_in_with_email">Sign In with Email</string>
     <string name="sign_in_with_twitter">Sign In with Twitter</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
